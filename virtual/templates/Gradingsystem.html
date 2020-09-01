@@ -1,0 +1,65 @@
+
+{% extends "base.html" %}
+{% load static%}
+
+{% block grades %}
+<style>
+/*---grades----*/
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 70%; background-color: yellow;} /* yellow */
+.php {width: 60%; background-color: Red;} /* Dark Grey */
+
+.main {
+	max-height: 550px;;
+	background-color: #292c2f;
+	color: white;
+	font-size: 38pt;
+	text-align: center;
+	line-height: 550px;}
+</style>
+
+<h1 style="text-align: center"> Our Grading System</h1>
+<p>Amazing(A)</p>
+<div class="container">
+  <div class="skills html">Above 90%</div>
+</div>
+
+<p>Good(B)</p>
+<div class="container">
+  <div class="skills css">80%</div>
+</div>
+
+<p>Fair(C)</p>
+<div class="container">
+  <div class="skills js">70%</div>
+</div>
+
+<p> Fail(F)</p>
+<div class="container">
+  <div class="skills php">Below 70%</div>
+  
+ <h1> Key</h1>
+<h3> Excellent/Amazing</h3></br>
+The paper was wonderfully done with a distintion.(Grade A). </br>
+<h3>Good</h3>
+The paper met all the standards.(Grade B).</br>
+<h3>Fair</h3>
+The paper was farely done but more work needs correction.(Grade C).</br>
+<h3>Fail(Grade F)</h3>
+The paper was poorly done and the paper <b>MUST</b> be reasigned to a different tutor.If assignment is overdue, the customer is refunded 100% of the amount charged.
+
+<h1 style="text-align: center">N/B For Paper with grade C</h1>
+ <h2 style= "color: red;"> The tutor who did the paper in question, MUST revise the document to the required standards (according to the customer's demands) with <b>ZERO</b> additional charges.</h2>
+
+
+ 
+</div>
+{% endblock grades %}

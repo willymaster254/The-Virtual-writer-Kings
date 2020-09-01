@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Writer Kings</title>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png ' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png ' %}">
+
+    <link rel="manifest" href="{% static 'favicon/site.webmanifest">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css'%} " rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{% static 'css/mdb.min.css'%}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{% static 'css/style.min.css' %} " rel="stylesheet">
+
+    <style>
+        body {
+    color: #ffffff;
+    background-color: #1f2735;
+        }   
+
+    .ant-card {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fafafd;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    font-feature-settings: "tnum";
+    position: relative;
+    background: #273142;
+    border-radius: 4px;
+    transition: all .3s;
+    }    
+    </style>
+   
+</head>
+<body>
+    <main class=" container-fluid row">
+        <!-- column one  -->
+        <div class="col-lg-5 "> 
+
+          <!-- <div class="col-lg-8"> 
+            <div class=" "> -->
+
+    
+                <div class="ant-card px-3 py-4">
+                    <form action="" method="POST" enctype="multipart/form-data">
+        
+                    {% csrf_token %}
+                 
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                      <i class="fas fa-bars" id="btn"></i>
+                      <i class="fas fa-times" id="cancel"></i>
+                    </label>
+                    <div class="sidebar">
+                    <header><i class="fa fa-book" style="font-size:48px;color: black"></i></header>
+                  <ul>
+                <li><a href="/orders/"><i class='fas fa-marker'></i>Make Order</a></li>
+                <li><a href="#"><i class="fas fa-spinner fa-spin"></i>Orders in Progress</a></li>
+                <li><a href="#"><i class="fas fa-sync-alt fa-spin"></i>Completed Orders</a></li>
+                <li><a href="#"><i class='fas fa-comments'></i>Customer Reviews</a></li>
+                <li><a href="#"><i class="fas fa-calendar-week"></i>Terms $ Condtions</a></li>
+                <li><a href="#"><i class='fas fa-dollar-sign'></i>Payment Platforms</a></li>
+                <li><a href="#"><i class='fas fa-bell'></i>Notifications</a></li>
+                
+                </ul>
+                </div>
+
+        </div>
+        </div>
+        <!-- column one  -->
+
+
+        <!-- column two  -->
+        
+        <!-- column two  -->
+
+           
+
+    </main>
+
+
+
+
+
+
+   
+</body>
+</html>

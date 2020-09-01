@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Writer Kings</title>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png ' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png ' %}">
+
+    <link rel="manifest" href="{% static 'favicon/site.webmanifest">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css'%} " rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{% static 'css/mdb.min.css'%}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{% static 'css/style.min.css' %} " rel="stylesheet">
+
+    <style>
+        body {
+    color: #ffffff;
+    background-color: #1f2735;
+        }   
+
+    .ant-card {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fafafd;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    font-feature-settings: "tnum";
+    position: relative;
+    background: #273142;
+    border-radius: 4px;
+    transition: all .3s;
+    }    
+    </style>
+   
+</head>
+<body>
+    <main class=" container-fluid row">
+        <!-- column one  -->
+        <div class="col-lg-2 "> 
+
+            <a href="/" >  </a>
+
+        </div>
+        <!-- column one  -->
+
+
+        <!-- column two  -->
+        <div class="col-lg-8"> 
+            <div class=" ">
+
+                <h1 class="text-center"><strong> Tutor Record Keeping </strong></h1>
+                <div class="ant-card px-3 py-4">
+                    <form action="" method="POST" enctype="multipart/form-data">
+        
+                    {% csrf_token %}
+                 
+                        
+                        ​​<table style="width:100%">
+                        <div class="row ">
+                            <div class="form-group col-lg-6 col-md-12">
+                                <tr>
+                                    <label for="defaultFormSubjectModalEx">Topic</label>
+                                    <input type="text" id="defaultFormSubjectModalEx" class="form-control form-control-sm">
+
+                                </tr>
+                              
+                            </div>
+                            <div class="form-group col-lg-6 col-md-12">
+                                <tr>
+                                    <label for="defaultFormSubjectModalEx">Subject</label>
+                                    <input type="text" id="defaultFormSubjectModalEx" class="form-control form-control-sm">
+
+                                   </tr>
+                            </div>
+                          </div>
+
+                          <div class="row ">
+                            <div class="form-group col-lg-6 col-md-12">
+
+                                <tr>
+                                    <label for="defaultFormSubjectModalEx">Pages</label>
+                                    <input type="text" id="defaultFormSubjectModalEx" class="form-control form-control-sm">
+
+                                   </tr>
+                            </div>
+                            
+
+                          <div class="row ">
+                            <div class="form-group col-lg-6 col-md-12">
+
+                                <tr>
+                                    <label for="defaultFormSubjectModalEx">Amount</label>
+                                    <input type="text" id="defaultFormSubjectModalEx" class="form-control form-control-sm">
+
+                                   </tr> 
+
+                            </div>
+                            <div class="form-group col-lg-6 col-md-12">
+                                <tr>
+                                    <label for="defaultFormSubjectModalEx">Paper Upload</label>
+                                   
+                                   </tr>
+                              
+                            </div>
+                            <br>
+                            <div class="file-upload-wrapper">
+                                <input type="file" id="input-file-now" class="file-upload" />
+                              </div>
+                          </div>
+                             
+                        <div class="mx-auto text-center">
+                            <input type="submit"  class = 'btn btn-primary ' value="Save" />
+                        
+                        </div>
+                        
+                
+                    </form>
+
+                </div>
+                
+            </div>
+            
+
+        </div>
+        <!-- column two  -->
+
+            <!-- column three  -->
+        <div class="col-lg-2">
+            
+        </div>
+        <!-- column three  -->
+
+    </main>
+
+
+
+
+
+
+   <script></script>
+</body>
+</html>
